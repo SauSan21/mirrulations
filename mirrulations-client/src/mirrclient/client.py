@@ -60,7 +60,7 @@ class Client:
         self.client_id = os.getenv('ID')
         self.path_generator = PathGenerator()
         self.saver = Saver(savers=[DiskSaver(),
-                                   S3Saver(bucket_name="mirrulations")])
+                                   S3Saver(bucket_name="s3fakecs334s25")])
         self.redis = redis_server
         self.job_queue = job_queue
         self.cache = JobStatistics(redis_server)

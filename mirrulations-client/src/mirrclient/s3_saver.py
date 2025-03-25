@@ -19,7 +19,7 @@ class S3Saver():
     save_binary(path = string, binary = bytes)
 
     """
-    def __init__(self, bucket_name="mirrulations"):
+    def __init__(self, bucket_name="s3fakecs334s25"):
         """
         Constructor for S3Saver
         Gets AWS credentials from .env file

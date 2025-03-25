@@ -86,8 +86,8 @@ class JobQueue:
     def get_last_timestamp_string(self, endpoint):
         key = f'{endpoint}_last_timestamp'
         if self.database.exists(key):
-            return self.database.get(key).decode()
-        return '1972-01-01 00:00:00'
+            return '2025-03-25 11:00:00'
+        return '2025-03-25 11:00:00'
 
     def set_last_timestamp_string(self, endpoint, date_string):
         key = f'{endpoint}_last_timestamp'
